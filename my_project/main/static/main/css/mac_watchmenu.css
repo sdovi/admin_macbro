@@ -1,0 +1,174 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.apple {
+    font-size: 48px;
+    color: #1d1d1d;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 0 0 10px;
+}
+
+.titan {
+    font-size: 32px;
+    color: #555;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.watch2 {
+    width: 530px;
+    height: 530px;
+}
+
+.sect1 {
+    display: flex;
+    justify-content: center;
+}
+
+.sect2-text2 h1 {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 700;
+    margin: 30px 0 10px;
+}
+
+.watch {
+    border: 1px solid var;
+    border-color: rgb(0, 60, 255);
+    padding: 20px 60px;
+    cursor: pointer;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    border-radius: 12px;
+    background-color: white;
+    font-weight: 670;
+    font-size: 16px;
+}
+
+.sect2-text {
+    width: 600px;
+}
+
+.krug {
+    width: 30px;
+}
+
+.watch {
+    transition-duration: 500ms;
+    border: 1.5px solid;
+    border-color: rgb(182, 182, 182);
+}
+
+.watchcolor {
+    transition-duration: 500ms;
+    border: 1.5px solid;
+    border-color: rgb(182, 182, 182);
+    width: 100%;
+    padding: 18px 0px;
+    display: block;
+    border-radius: 12px;
+    background-color: white;
+    font-weight: 370;
+    font-size: 16px;
+}
+
+.sect2-buttons {
+    gap: 20px;
+    display: flex;
+}
+
+.watchcolor:hover {
+    border-color: rgb(0, 60, 255);
+}
+
+.watch:hover {
+    border-color: rgb(0, 60, 255);
+
+}
+
+.sect2-text {
+    padding-top: 50px;
+}
+
+.sect3 {
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.sect3 p {
+    width: 93%;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.sectbuy button{
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+    padding: 15px 0px;
+    background-color: rgb(55, 75, 248);
+    transition-duration: 500ms;
+
+
+}
+.sectbuy{
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.sectbuy button:hover{
+    background-color: rgb(33, 50, 202);
+}
+
+@media only screen and (max-width: 768px) {
+    .sect1{
+        display: block;
+    }
+    .sect2-buttons{
+        display: block;
+            }
+}
+
+@media only screen and (max-width: 480px) {
+   .sect2-buttons{
+    display: block;
+   }
+   .sectbuy button{
+    font-size: 25px;
+    font-weight: 400;
+    width: 90%;
+    margin: auto;
+
+   }
+   .watch2{
+    width: 620px;
+    height: 590px;
+   }
+   .watchcolor{
+    font-size: 25px;
+    font-weight: 400;
+    width: 100%;
+    margin: auto;
+   }
+   .sect3{
+    text-align: center;
+    width: 600px;
+
+
+   }
+}

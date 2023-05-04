@@ -1,0 +1,50 @@
+.sectcompaniya {
+    height: 330px;
+}
+.sectcompani-text p{
+    padding-top: 20px;
+    line-height: 1.6;
+    font-size: 16px;
+}
+.sectcompani-text{
+    padding-top: 50px;
+}
+.sectcompani-text{
+    margin: auto;
+    width: 90%;
+}
+.sectcompani-text h2{
+    font-weight: 700;
+}
+.card_dostavka{
+    padding: 30px;
+    max-width: 400px;
+    margin: 0 auto;
+    width: 100%;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    flex-direction: column;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    align-items: center;
+    border-radius: 6px;
+    height: 100%;
+    text-align: center;
+    -webkit-box-shadow: 0 2px 30px rgba(0,0,0,.08);
+    box-shadow: 0 2px 30px rgba(0,0,0,.08);
+}
+.card_dostavka h4{ 
+    padding-top: 35px;
+}
+.card_dostavka i{
+    padding-top: 20px;
+}
+.sect2_dostavka p{
+    font-size: 16px;
+    font-weight: 500;
+    padding-left: 30px;
+}

@@ -1,0 +1,29 @@
+{% extends 'main/macbro.html' %}
+{% load static %}
+{% block head %}
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<link rel="stylesheet" href="{% static 'main/css/mac_skidka.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="bg">
+    <div class="container2">
+        <div class="sect1cards">
+                    <div class="novosti-card">
+                        <img src="{% static 'main/img/ramadan/1.jfif' %}" alt="">
+                        <div class="contentnovosti">
+                            <div class="card-body">
+                                <h5 class="novosti1">Дары рамадана</h5>
+                                <p class="novosti">Мурад ока научите</p>
+                                <h5 class="novosti2">c 23.03.2023до 24.04.2023</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

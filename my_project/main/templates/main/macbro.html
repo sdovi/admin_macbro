@@ -1,0 +1,169 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% block head %}
+    {% endblock %}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'main/css/macstyle.css' %}">
+</head>
+
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg  nav-text" style="background-color: #1f2122; height: 75px;">
+        <div class="container3">
+            <div class="navbar-content">
+                <h1 class="macbro"><a class="dropdown-item" href="{% url 'btn3' %}">Mac<span class="bro">Bro</span> </a>
+                </h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-txt">
+                        <li class="nav-item">
+                            <h1 class="macbro2"><a class="dropdown-item" href="{% url 'btn5' %}">Mac</a></h1>
+                        </li>
+                        <li class="nav-item">
+                            <h1 class="macbro2"><a class="dropdown-item" href="{% url 'btn6' %}">IPhone</a></h1>
+                        </li>
+                        <li class="nav-item">
+                            <h1 class="macbro2"><a class="dropdown-item" href="{% url 'btn7' %}">IPad</a></h1>
+                        </li>
+                        <li class="nav-item">
+                            <h1 class="macbro2"><a class="dropdown-item" href="{% url 'btn8' %}">Watch</a></h1>
+                        </li>
+                        <li class="nav-item ">
+                            <h1 class="macbro2"><a class="dropdown-item" href="{% url 'btn10' %}">AirPots</a></h1>
+
+                        </li>
+
+                        <a class="macbro2" href="{% url 'btn14' %}">
+                            <h1 class="macbro2">Акустика</h1>
+                        </a>
+                        <a class="macbro2" href="{% url 'btn13' %}">
+                            <h1 class="macbro2">Аксессуары</h1>
+                        </a>
+                        <a class="macbro2" href="{% url 'btn15' %}">
+                            <h1 class="macbro2">Смартфоны</h1>
+                        </a>
+                        <a class="macbro2" href="{% url 'btn16' %}">
+                            <h1 class="macbro2">Samsung</h1>
+                        </a>
+                        <a class="macbro2" href="{% url 'btn18' %}">
+                            <h1 class="macbro2">Все</h1>
+                        </a>
+                        <i class="fa-solid fa-magnifying-glass fa-lg" style="color: #ffffff;"></i>
+                        <i class="fa-solid fa-heart fa-xl" style="color: #ffffff;"></i>
+                        <i class="fa-solid fa-bag-shopping fa-xl" style="color: #ffffff;"></i>
+                        <a href="{% url 'btn17' %}"><i class="fa-sharp fa-solid fa-right-from-bracket fa-xl"
+                                style="color: #ffffff;"></i></a>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>  
+        </div>
+    </nav>
+
+
+    {% block content %}
+    {% endblock %}
+
+    <hr class="mt-5">
+    <div class="container2">
+        <div class="footer-cards">
+            <div class="row mt-5 mb-5">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="footertext1">
+                        <h6>Покупай</h6>
+                        <a href="{% url 'btn5' %}" style="text-decoration: none;">
+                            <p>Mac</p>
+                        </a>
+                        <a href="{% url 'btn7' %}" style="text-decoration: none;">
+                            <p>IPad</p>
+                        </a>
+                        <a href="{% url 'btn6' %}" style="text-decoration: none;">
+                            <p>IPhone</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="footertext2">
+                        <h6>Компания</h6>
+                        <a href="{% url 'btn19' %}" style="text-decoration: none;">
+                            <p>Новости</p>
+                        </a>
+                        <a href="{% url 'btn20' %}" style="text-decoration: none;">
+                            <p>О компании</p>
+                        </a>
+                        <a href="{% url 'btn21' %}" style="text-decoration: none;">
+                            <p>Адрес магазинов</p>
+                        </a>
+                        <a href="{% url 'btn19' %}" style="text-decoration: none;">
+                            <p>Для бизнеса</p>
+                        </a>
+                        <a href="{% url 'btn22' %}" style="text-decoration: none;">
+                            <p>Вакансии</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="footertext3">
+                        <h6>Информация</h6>
+                        <a href="{% url 'btn23' %}" style="text-decoration: none;">
+                            <p>Мы продаем для вас</p>
+                        </a>
+                        <a href="{% url 'btn25' %}" style="text-decoration: none;">
+                            <p>Доставка</p>
+                        </a>
+                        <a href="{% url 'btn26' %}" style="text-decoration: none;">
+                            <p>Контакты</p>
+                        </a>
+                        <a href="{% url 'btn27' %}" style="text-decoration: none;">
+                            <p>Акции и скидки</p>
+                        </a>
+                        <a href="{% url 'btn24' %}" style="text-decoration: none;">
+                            <p>o eSIM</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="footertext3">
+                        <h6>Связаться с нами</h6>
+                        <div class="social">
+                            <a href="https://www.facebook.com/macbrouz/"><i class="app fa-brands fa-facebook fa-xl"
+                                    style="color: #c2c2c2;"></i></a>
+                            <a href="https://www.instagram.com/macbro.uz/"><i class="app fa-brands fa-instagram fa-xl"
+                                    style="color: #c2c2c2;"></i></a>
+                            <a href="https://t.me/gembabobot"><i class="app fa-brands fa-telegram fa-xl"
+                                    style="color: #c2c2c2;"></i></a>
+                            <a href="https://www.youtube.com/channel/UCa2sZELOq4F6cAGsY23A6TA"><i
+                                    class="app fa-brands fa-youtube fa-xl" style="color: #c2c2c2;"></i></a>
+                            <a href="https://www.tiktok.com/@macbro.uz"><i class="app fa-brands fa-tiktok fa-xl"
+                                    style="color: #c2c2c2;"></i></a>
+
+                        </div>
+                        <p>+998 78 777 20 20</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://kit.fontawesome.com/5ac26fc84a.js" crossorigin="anonymous"></script>
+
+        <script src="https://kit.fontawesome.com/5ac26fc84a.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+            crossorigin="anonymous"></script>
+    </div>
+
+
+
+
+</body>
+
+</html>

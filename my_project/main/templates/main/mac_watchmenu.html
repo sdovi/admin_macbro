@@ -1,0 +1,109 @@
+{% extends 'main/macbro.html' %}
+{% load static %}
+{% block head %}
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="{% static 'main/css/mac_watchmenu.css' %}">
+{% endblock %}
+
+{% block content %}
+
+{% for i in product %}
+<div class="sect1">
+    <img src="{{ i.photowatch.url }}" class="watch2 pb-5" alt="">
+    <div class="sect2">
+
+        <div class="sect2-text">
+            <h1 class="apple">{{ i.title }}</h1>
+            <h1 class="titan">{{ i.content }}</h1>
+            <div class="sect2-text2">
+                <h1>Размер</h1>
+                <button class="watch">{{ i.size }}</button>
+
+            </div>
+            <div class="sect2-text2">
+                <h1>Цвета</h1>
+                <div class="sect2-buttons">
+                    <button class="watchcolor"><img class="krug" src="{{ i.imgcolor2.url }}" alt="">
+                        Черный
+                    </button>
+                    <button class="watchcolor"><img class="krug" src="{{ i.imgcolor3.url }}" alt="">
+                        Желтый
+                    </button>
+                </div>
+                <div class="sect2-buttons mt-3">
+                    <button class="watchcolor"><img class="krug" src="{{ i.imgcolor4.url }}"
+                                                    alt="">
+                        Зеленый
+                    </button>
+                    <button class="watchcolor"><img class="krug" src="{{ i.imgcolor5.url }}" alt="">
+                        Белый
+                    </button>
+                </div>
+                <div class="sect2-buttons mt-3">
+                    <button class="watchcolor"><img class="krug" src="{{ i.imgcolor6.url }}" alt="">
+                        Серый
+                    </button>
+                    <button class="watchcolor"><img class="krug" src="{{ i.imgcolor7url }}" alt="">
+                        Оранжевый
+                    </button>
+                </div>
+                <div class="sect2-buttons mt-3">
+                    <button class="watchcolor"><img class="krug" src="{{ i.imgcolor8.url }}" alt="">
+                        Светло серый
+                    </button>
+                    <button class="watchcolor"><img class="krug" src="{{ i.imgcolor9.url }}"
+                                                    alt="">
+                        Черно серый
+                    </button>
+                </div>
+                <div class="sect2-buttons mt-3">
+                    <button class="watchcolor"><img class="krug" src="{{ i.imgcolor10.url }}" alt="">
+                        сияющая звезда
+                    </button>
+                </div>
+            </div>
+            <div class="sectbuy">
+                <button>Купить в один клик</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="sect3">
+        <p>Чтобы создать идеальные спортивные часы, мы тщательно проработали каждый элемент с особым вниманием к
+            деталям, обеспечивая непревзойденную производительность. Титан обеспечивает идеальный баланс между
+            весом, прочностью и устойчивостью к коррозии. Новый дизайн корпуса поднимается вверх, окружая плоское
+            сапфировое стекло и защищая его от ударов по краям. Цифровая заводная головка больше, а боковая кнопка
+            выступает из корпуса, что упрощает использование часов в перчатках.
+            Специально для Apple Watch Ultra циферблат Wayfinder оснащен циферблатом времени, который можно
+            переключать на компас в режиме реального времени, и имеет восемь дополнительных функций. В условиях
+            низкой освещенности вы можете повернуть цифровую заводную головку, чтобы активировать ночной режим, и
+            увидеть, как циферблат часов становится ярко-красным.
+            Готовы к действию. Новая кнопка действия позволяет быстро и физически управлять множеством функций. Они
+            настраиваются и могут выполнять такие действия, как управление тренировкой, отметка точки компаса или
+            начало погружения. Как и вы, они полны потенциала.
+            Время автономной работы в течение нескольких дней. Когда вы второй день в туристическом походе,
+            заключительном этапе триатлона или погружении вдоль кораллового рифа, последнее, о чем вы хотите думать,
+            это разрядка аккумулятора. Благодаря более длительному, чем когда-либо, времени автономной работы вы
+            можете использовать практически все и экономить энергию.
+            Производительность GPS имеет решающее значение для спортсменов, которым нужны максимально точные
+            показатели, независимо от того, тренируются ли они на городских улицах или на природе. Apple Watch Ultra
+            оснащены новой высокоточной двухчастотной системой GPS, которая обеспечивает потрясающую точность в
+            самых труднодоступных местах.
+            Для большинства людей традиционное GPS-решение с GPS L1 работает большую часть времени. Но это может
+            быть сложно, когда высокие здания, деревья или густая листва блокируют спутники. Новый GPS-навигатор L5
+            обеспечивает улучшенную обработку сигнала, уменьшая количество ошибок и обеспечивая более стабильный
+            сигнал в условиях, например, в густонаселенных городах.
+            Если вы заблудились или получили травму и хотите привлечь к себе внимание, удерживайте кнопку действия,
+            чтобы включить сирену, которую можно услышать на расстоянии до 180 метров.
+            Рабочая температура от -20°C до 55°C.</p>
+    </div>
+</div>
+{% endfor %}
+
+{% endblock %}
+
+

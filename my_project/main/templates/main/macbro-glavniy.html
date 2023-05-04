@@ -1,0 +1,280 @@
+{% extends 'main/macbro.html' %}
+{% load static %}
+
+{% block head %}
+{% endblock %}
+{% block content %}
+    
+<div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active"
+            style="background: url(https://ie.wampi.ru/2023/04/04/black02903276b11676df.png) no-repeat center center/cover; height: 100%;">
+            <div class="content-carusel-cards ">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="carusels-txt">
+                            <h3 class="carusel-text1">Новый</h3>
+                            <h1 class="carusel-text2">iPhone 14 Серии</h1>
+                            <button class="carusel-btn mt-4">Купить</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <img class="img-carusel" src="{% static 'main/img/carusel/iphone.png' %}" alt="">
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="carousel-item"
+            style="background: url(https://ie.wampi.ru/2023/04/04/black02903276b11676df.png) no-repeat center center/cover; height: 100%;">
+
+            <div class="content-carusel-cards ">
+                <<div class="row">
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="carusels-txt">
+                            <h3 class="carusel-text1">Новый</h3>
+                            <h1 class="carusel-text2">iPhone 14 Серии</h1>
+                            <button class="carusel-btn mt-4">Купить</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <img class="img-carusel" src="{% static 'main/img/carusel/iphone.png' %}" alt="">
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="carousel-item"
+        style="background: url(https://ie.wampi.ru/2023/04/04/black02903276b11676df.png) no-repeat center center/cover; height: 100%;">
+
+        <div class="content-carusel-cards ">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="carusels-txt">
+                        <h3 class="carusel-text1">Новый</h3>
+                        <h1 class="carusel-text2">iPhone 14 Серии</h1>
+                        <button class="carusel-btn mt-4">Купить</button>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <img class="img-carusel" src="{% static 'main/img/carusel/iphone.png' %}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+</button>
+</div>
+
+
+<div class="container">
+    <div class="section1">
+        <h1 class="novinka">Новинки</h1>
+        <div class="sect1-cards">
+            <div class="row">
+                {% for i in product %}
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="sect1-card">
+                        <img src="{{ i.photo.url }}" alt="">
+
+                        <p>{{ i.title}}</p>
+                        <h1>от {{i.price}} сум</h1>
+                        <button class="buy">Купить</button>
+
+                    </div>
+                </div>
+                {% endfor %}
+
+            </div>
+        </div>
+    </div>
+
+    <img class="fon1" src="https://cdn.macbro.uz/macbro/8edef17b-e87b-4ac4-94e6-4bb822b94817" alt="">
+
+
+    <div class="section1">
+        <h1 class="novinka">Apple</h1>
+        <div class="sect1-cards">
+            <div class="row">
+                {% for i in product %}
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="sect1-card">
+                        <img src="{{ i.photo.url }}" alt="">
+
+                        <p>{{ i.title}}</p>
+                        <h1>от {{i.price}} сум</h1>
+                        <button class="buy">Купить</button>
+
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    <div class="sectakustika">
+        <h1 class="novinka">Акустика</h1>
+        <div class="sect1-cards">
+            <div class="row">
+                {% for i in akustika %}
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="sect1-card">
+                        <img src="{{ i.photo.url }}" alt="">
+
+                        <p>{{ i.title}}</p>
+                        <h1>от {{i.price}} сум</h1>
+                        <button class="buy">Купить</button>
+
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="akustikaimg">
+            <img class="akustikaimg2" src="{% static 'main/img/mainakustika/5.png' %}" alt="">
+        </div>
+    </div>
+
+    <div class="sectaksesuar">
+        <h1 class="novinka">Аксессуар</h1>
+        <div class="sect1-cards">
+            <div class="row">
+                {% for i in aksessuar %}
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="sect1-card">
+                        <img src="{{ i.photo.url }}" alt="">
+
+                        <p class="">{{ i.title}}</p>
+                        <h1>от {{i.price}} сум</h1>
+                        <button class="buy">Купить</button>
+
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+
+    </div>
+    <div class="sectphone mt-5 ">
+        <h1 class="novinka ">Смартфоны</h1>
+        <div class="sect1-cards ">
+            <div class="row">
+                {% for i in phone %}
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="sect1-card">
+                        <img src="{{ i.photo.url }}" alt="">
+
+                        <p class="">{{ i.title}}</p>
+                        <h1>от {{i.price}} сум</h1>
+                        <button class="buy">Купить</button>
+
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="akustikaimg">
+            <img class="akustikaimg2" src="{% static 'main/img/mainphone/1.png' %}" alt="">
+        </div>
+
+    </div>
+
+</div>
+
+<div class="container2">
+    <div class="sectfooter">
+        <p>Вас приветствует MacBro — крупнейший в Узбекистане интернет-магазин телефонов, планшетов и других гаджетов от
+            ведущих производителей планеты. Мы уже более 15 лет реализуем продукцию Apple, а также Samsung и Xiaomi.
+            Компания является крупнейшим дистрибьютором этих брендов, что позволило создать оптимальные для покупателей
+            условия. Ознакомьтесь с возможностями, которые открывает перед покупателями в Ташкенте и других городах РУз
+            наш онлайн-магазин телефонов. Здесь же вы найдете ответы на самые популярные вопросы клиентов, задаваемые
+            специалистам службы поддержки MacBro.</p>
+
+        <h2>Что мы предлагаем: ассортимент интернет-магазина</h2>
+
+        <p>За длительный период деятельности в сфере поставок и продаж различных гаджетов наша компания наладила тесные
+            партнерские отношения с ведущими производителями. Сегодня мы — дистрибьюторы Apple в Узбекистане, что
+            позволяет предлагать покупателям лучшие условия продажи. Одно из главных преимуществ предложения купить
+            телефоны в Ташкенте в онлайн-магазине MacBro — это ассортимент. Он регулярно расширяется: лучшие новинки
+            мирового рынка мобильных устройств и аксессуаров незамедлительно появляются в нашем каталоге.</p>
+
+        <p>Для удобства поиска клиентами интересующих гаджетов предлагаемая покупателям продукция распределена на
+            категории. Это позволяет быстро и легко выбрать ноутбуки Mac, моноблоки iMac, смартфоны iPhone, планшеты
+            iPad, смартчасы, наушники AirPods и аксессуары от Apple (продукция этой компании составляет основную часть
+            наших продаж). Отдельные категории выделены для коллекций смартфонов от Samsung, планшетов и наушников
+            производства этой компании. Также у нас можно приобрести лучшие телефоны Xiaomi.</p>
+
+        <h2>Почему выбирают MacBro: наши преимущества</h2>
+
+        <p>Разнообразный ассортимент, в котором представлены лучшие модели телефонов, планшетов, ноутбуков и другой
+            продукции от ведущих производителей цифровой электроники, — далеко не единственная причина, по которой
+            покупатели отдают предпочтение нам. Обращаясь в интернет-магазин смартфонов MacBro, клиенты открывают для
+            себя следующие возможности:</p>
+
+        <p><span class="footer-text">Гарантированное оригинальное качество.</span> На правах дистрибьютора Apple и
+            других производителей в Узбекистане мы обеспечиваем <br> покупателям стопроцентную защиту от подделок.</p>
+        <p><span class="footer-text">Минимальные для Узбекистана цены на телефоны и другие гаджеты. </span> Компания
+            работает с производителями без посредников, что позволяет предлагать покупателям оптимальную стоимость
+            продукции.</p>
+        <p><span class="footer-text">Возможность приобрести смартфоны, ноутбуки, моноблоки и другой товар в
+                рассрочку.</span> Мы предлагаем выгодные условия продажи без первоначального взноса только с паспортом.
+            Купить телефоны в рассрочку можно на срок до 12 месяцев.</p>
+        <p><span class="footer-text">Доставка заказов по всей территории Узбекистана.</span> Мы доставляем телефоны,
+            ноутбуки, аксессуары и другой товар на выгодных для покупателей условиях, с которыми можно ознакомиться в
+            соответствующем разделе сайта.</p>
+        <p><span class="footer-text">Акции и скидки на продукцию из каталога.</span> На сайте регулярно проводятся
+            акции, позволяющие приобрести смартфоны и другой товар со скидкой. Кроме того, у нас есть персональные
+            предложения постоянным клиентам.</p>
+        <p><span class="footer-text">Гарантийное обслуживание в собственном сервис-центре BroService. </span> Мы даем
+            гарантию на всю электронику сроком до одного года, что отличает нас от конкурентов.</p>
+        <p><span class="footer-text">Услуга Т   rade in</span> позволяет нашим клиентам обменять свои старые телефоны (от
+            бренда Apple и Samsung) на новую модель смартфона.</p>
+        <p>К преимуществам интернет-магазина электроники MacBro также относятся услуги квалифицированных консультантов.
+            С операторами службы поддержки можно связаться по телефону или в Телеграм. Специалисты предоставят ответы на
+            все возникающие вопросы, помогут подобрать лучшие смартфоны, планшеты и другую продукцию. Они
+            проконсультируют вас по техническим характеристикам продукции Apple, Samsung и Xiaomi, а при необходимости
+            помогут с оформлением заказа. </p>
+
+
+        <h2>FAQ: популярные вопросы клиентов MacBro</h2>
+        <p>До того, как вы обратитесь в службу поддержки нашего интернет-магазина, рекомендуем ознакомиться с ответами
+            на часто задаваемые вопросы наших покупателей. Возможно, здесь вы найдете интересующую информацию, что
+            избавит от необходимости связываться с консультантом.</p>
+
+        <p><span class="footer-text">Вы продаете только оригинальные телефоны?</span> — Да. Компания представляет бренд
+            Apple на территории Узбекистана и реализует исключительно оригинальную продукцию. Кроме того, мы
+            предоставляем гарантийное сервисное обслуживание покупателям смартфонов, ноутбуков, планшетов и другой
+            электроники из нашего интернет-магазина.</p>
+        <p><span class="footer-text">Возможны ли какие-то дополнительные расходы, кроме тех, которые указаны при
+                подтверждении заказа?</span> — Нет. Сумма к оплате, указанная при оформлении заявки, является
+            окончательной. В нее включена стоимость, а также дополнительные затраты (доставка) или льготы (акции,
+            скидки).</p>
+        <p><span class="footer-text">Предусмотрен ли у вас возврат товара?</span> — Возврата нет. В случаях, если клиент
+            не удовлетворен устройством и считает, что оно ненадлежащего качества, он имеет право на обмен товара в
+            течение трех рабочих дней с момента покупки товара, с условием отправки заказа обратно в MacBro за свой
+            счет, в неповрежденном виде, с наличием всей комплектации товара.</p>
+        <p><span class="footer-text">Почему на одни и те же модели могут быть разные цены?</span> — Мобильные гаджеты
+            одной марки могут различаться между собой цветом, языковыми пакетами, объемом памяти, клавиатурой и другими
+            спецификациями. Это и является причиной различия в цене.</p>
+
+
+    </div>
+
+</div>
+
+{% endblock %}

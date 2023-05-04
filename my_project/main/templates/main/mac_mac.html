@@ -1,0 +1,76 @@
+{% extends 'main/macbro.html' %}
+{% load static %}
+{% block head %}
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<link rel="stylesheet" href="{% static 'main/css/mac_mac.css' %}">
+{% endblock %}
+{% block content %}
+<div class="section">
+    <div class="container">
+        <div class="sect1">
+
+            <div class="sect-text">
+                <h1>Mac</h1>
+                <p>Интернет-магазин MacBro предлагает купить ноутбуки MacBook в Ташкенте. Компания специализируется на
+                    поставках этой электроники уже более 14 лет. Мы являемся дистрибьютором Apple в Узбекистане, что
+                    позволяет обеспечить оптимальные условия продажи популярных ноутбуков от ведущего американского
+                    производителя. Ознакомьтесь с информацией о продукции, представленной в этой рубрике каталога, и
+                    преимуществами продажи лэптопов Макбук в Узбекистане в интернет-магазине MacBro. Также в обзоре даны
+                    ответы на часто задаваемые вопросы покупателей.
+                </p>
+            </div>
+        </div>
+    </div>
+    <hr class="hr">
+</div>
+
+<div class="section2">
+    <div class="container">
+        <div class="sect2-text">
+            <p class="posm">Посмотреть все продукты</p>
+
+            <div class="sect2-text2">
+                <p class="sortir">Сортировать по:</p>
+                <p class="novinka1">Новейшие</p>
+            </div>
+
+        </div>
+
+    </div>
+    <hr class="hr">
+
+
+    <div class="container">
+        <div class="sect2-cards">
+            <div class="row">
+                {% for i in product %}
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="sect2-card">
+                        <img src="{{ i.photo.url }}" alt="">
+
+                        <p>{{ i.title}}</p>
+                        <h1>от {{i.price}} сум</h1>
+
+                    </div>
+                </div>
+                {% endfor %}
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    {% endblock %}
+</div>
+
+
+</body>
+
+</html>

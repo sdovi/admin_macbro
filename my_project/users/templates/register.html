@@ -1,0 +1,31 @@
+{% extends 'main/macbro.html' %}
+{% load static %}
+{% block head %}
+<link rel="stylesheet" href="{% static 'main/css/mac_register.css' %}">
+{% endblock %}  
+{% block content %}
+<div class="bgreg">
+    <div class="container">
+        <div class="sectreg">
+            <h1 class="sectregister">Зарегистрируйтесь в MacBro</h1>
+            <div class="register">
+
+
+
+
+                <form id="main-form" method="post">
+                    {% csrf_token %}
+                    {{ form.number }}
+                    {{ form.title }}
+                    {{ form.surname }}
+                    <div id="field" style="color: red;"></div>
+                    <button type="submit" class="reg">Зарегистрироваться</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+<script src="{% static 'main/js/regist.js' %}"></script>
+
+{% endblock %}

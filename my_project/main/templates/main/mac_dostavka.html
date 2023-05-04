@@ -1,0 +1,73 @@
+{% extends 'main/macbro.html' %}
+{% load static %}
+{% block head %}
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<link rel="stylesheet" href="{% static 'main/css/mac_dostavka.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="sectcompaniya"
+    style="background: url(https://macbro.uz/images/delivery_banner.png) no-repeat center center/cover;">
+
+
+
+
+</div>
+<div class="sectcompani-text">
+    <h2>Интернет-магазин MacBro предлагает разнообразные услуги доставки с высоким качеством.</h2>
+
+</div>
+<div class="container">
+    <div class="cards_dostavka">
+        <div class="row pt-5 pb-5">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card_dostavka">
+                    <i class="fa-solid fa-calendar-check fa-2xl" style="color: #000000;"></i>
+                    <h4>Продажа в <br>
+                        рассрочку</h4>
+
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card_dostavka">
+                    <i class="fa-sharp fa-solid fa-truck fa-2xl" style="color: #000000;"></i>
+                    <h4>Своевременная <br>
+                         доставка</h4>
+    
+                </div>
+            </div>
+           <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card_dostavka">
+                <i class="fa-sharp fa-solid fa-gears fa-2xl"></i>
+                <h4>Служба поддержки</h4>
+
+            </div>
+           </div>
+        </div>
+    </div>
+
+    <div class="sect2_dostavka mt-5">
+        <h4>Доставка</h4>
+        <p class="mt-3">Доставка электроники по Узбекистану - 50 000 сум</p>
+        <p>Доставка аксессуаров (чехлы, наушники, клавиатуры, мышки и т.д.) – 30 000 сум</p>
+    </div>
+    <div class="sect2_dostavka pt-2 pb-5">
+        <h4>Экспресс доставка</h4>
+        <p class="mt-3">Ускоренная доставка осуществляется в течение 1,5 часов с момента подтверждения заказа.</p>
+        <p>Стоимость ускоренной доставки в черте города Ташкент – 50 000 сум.</p>
+        <p>Получить более подробную информацию можно, позвонив по номеру call-центра магазина MacBro +998 78 777 20 20</p>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+{% endblock %}

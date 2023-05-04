@@ -1,0 +1,59 @@
+{% extends 'main/macbro.html' %}
+{% load static %}
+{% block head %}
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<link rel="stylesheet" href="{% static 'main/css/mac_novosti.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="bg">
+    <div class="container2">
+        <div class="sect1cards">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12 ">
+                    <div class="novosti-card">
+                        <img src="{% static 'main/img/novosti/1.jfif' %}" alt="">
+                        <div class="contentnovosti">
+                            <div class="card-body">
+                                <h5 class="novosti1">Новости</h5>
+                                <p class="novosti">Apple откажется от выпуска смартфонов с поддержкой физических SIM-карт в Европе</p>
+                                <h5 class="novosti2">31 марта 2023 г.</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="novosti-card">
+                        <img src="{% static 'main/img/novosti/1.jfif' %}" alt="">
+                        <div class="contentnovosti">
+                            <div class="card-body">
+                                <h5 class="novosti1">Новости</h5>
+                                <p class="novosti">
+                                    Apple работает над системой Touch ID под дисплеем</p>
+                                <h5 class="novosti2">10 марта 2023 г.</h5>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="novosti-card">
+                        <img src="{% static 'main/img/novosti/1.jfif' %}" alt="">
+                        <div class="contentnovosti">
+                            <div class="card-body">
+                                <h5 class="novosti1">Новости</h5>
+                                <p class="novosti">Будущая Siri сможет разговаривать со всеми, кто вам звонит, и делать заметки</p>
+                                <h5 class="novosti2">1 марта 2023 г.</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+{% endblock %}

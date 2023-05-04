@@ -1,0 +1,140 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.sect_iphone_menu {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 130px;
+}
+
+.iphoneimg {
+    margin-left: 130px;
+    width: 300px;
+}
+
+.sect_price h1 {
+    font-size: 48px;
+    color: #1d1d1d;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.gb {
+    font-size: 32px;
+    color: #555;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.sect_color h1 {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 700;
+}
+
+.watchbtn {
+    background-color: white;
+    border: 0.1px solid black;
+    border-radius: 10px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 0px 12px;
+
+}
+
+.sect_color_button {
+    align-items: center;
+    width: 600px;
+    gap: 18px;
+    display: flex;
+}
+
+.textbtniphone p {
+    font-size: 5px;
+}
+
+.watchbtn img {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    margin: auto;
+    display: block;
+    width: 30px;
+}
+
+.Gigabaytbtn {
+    padding: 15px 0px 0px 0px;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    border-radius: 12px;
+    justify-content: center;
+    border: 1px solid black;
+    background-color: white;
+    transition-duration: 500ms;
+}
+
+.Gigabaytbtn:hover {
+    border: 1px solid rgb(56, 60, 248);
+}
+
+.btn {
+    padding-top: 50px;
+    height: 100%;
+    width: 100%;
+}
+
+.div {
+    height: 300px;
+}
+
+@media only screen and (max-width: 768px) {
+    .sect_iphone_menu {
+        display: block;
+    }
+    .sect_color_button{
+        display: block;
+        margin: auto;
+        width: 100%;
+    }
+
+    .iphoneimg {
+        margin-top: 50px;
+        width: 230px;
+    }
+    .sect_price h1{
+        font-size: 35px;
+    }
+    .gb{
+        font-size: 20px;
+    }
+    .sect_color h1{
+        font-size: 20px;
+    }
+
+}
+
+.sect_price {
+    padding-top: 50px;
+}
+
+@media only screen and (max-width: 480px) {
+    .iphoneimg {
+        width: 150px;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+
+}

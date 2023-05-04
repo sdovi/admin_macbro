@@ -1,0 +1,79 @@
+{% extends 'main/macbro.html' %}
+{% load static %}
+{% block head %}
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<link rel="stylesheet" href="{% static 'main/css/mac_magazine.css' %}">
+{% endblock %}
+{% block content %}
+<div class="container">
+    <div class="sectmagazine">
+        <h1 class="sectmagazine-text">Наши филиалы</h1>
+
+    </div>
+    <div class="sect2magazine">
+            <div class="contentmagazine">
+                <h4>Магазин</h4>
+                <h4>Адрес</h4>
+                <h4>Режим работы</h4>
+            </div>
+        <div class="filial">
+            <div class="magazine-text1">
+                <div class="magazin1">
+                    <p>MacBro (Black Star Car Wash)</p>
+                </div>
+                <div class="magazin2">
+                    <p>
+                        Г. Ташкент, Мирабадский р-н, ул. Мирабадская 66A</p>
+                </div>
+                <div class="magazin3">
+                    <p>с 10-00 до 20-00 (без выходных)</p>
+                </div>
+    
+            </div>
+            <div class="magazine-text1">
+                <div class="magazin1">
+                    <p>MacBro (Паркентская)</p>
+                </div>
+                <div class="magazin2">
+                    <p>г. Ташкент, ул Паркентская, 219</p>
+                </div>
+                <div class="magazin3">
+                    <p>с 10-00 до 20-00 (без выходных) с 10-00 до 18-00 (во время месяца Рамадан)</p>
+                </div>
+    
+            </div>
+            <div class="magazine-text1">
+                <div class="magazin1">
+                    <p>MacBro Навои</p>
+                </div>
+                <div class="magazin2">
+                    <p>Г. Ташкент, Шайхонтахурский р-н, ул. Алишера Навои 27</p>
+                </div>
+                <div class="magazin3">
+                    <p>с 10-00 до 20-00 (без выходных) с 10-00 до 18-00 (во время месяца Рамадан).</p>
+                </div>
+    
+            </div>
+            <div class="magazine-text1">
+                <div class="magazin1">
+                    <p>MacBro Ц-1</p>
+                </div>
+                <div class="magazin2">
+                    <p>Г. Ташкент, Мирзо-Улугбекский р-н, Узбекистан овози, 21</p>
+                </div>
+                <div class="magazin3">
+                    <p>с 10-00 до 21-00 (без выходных)</p>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://kit.fontawesome.com/5ac26fc84a.js" crossorigin="anonymous"></script>
+
+{% endblock %}

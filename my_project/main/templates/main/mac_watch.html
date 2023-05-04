@@ -1,0 +1,76 @@
+{% extends 'main/macbro.html' %}
+{% load static %}
+
+{% block head %}
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="{% static 'main/css/mac_watches.css' %}">
+<title>macwatch</title>
+{% endblock %}
+
+{% block content %}
+<div class="section">
+    <div class="container">
+        <div class="sect1">
+            <div class="sect-text">
+                <h1>Watch</h1>
+                <p>интернет-магазин MacBro Предлагает заказать Apple Watch В ташкенте. Компание давно
+                    специализируется на поставках этих набирающих популярность гаджетов. Мы являемся дистрибьютором
+                    Apple В Узбекистане, что позволяет обеспечить оптимальные условия продажи популярных смарт-часов
+                    от ведущего американского производителя. Ознакомьтесь с информацией о продукции, представленной
+                    в этой рубрике каталога, и преимуществами продажи умных часов Apple Watch в Узбекистане в
+                    интернет-магазине Macbro. Также в обзоре даны ответы на часто задаваемые вопросы
+                    покупателей.</p>
+            </div>
+        </div>
+    </div>
+    <hr class="hr">
+</div>
+
+<div class="section2">
+    <div class="container">
+        <div class="sect2-text">
+            <p class="posm">Посмотреть все продукты</p>
+
+            <div class="sect2-text2">
+                <p>Сортировать по:</p>
+                <p>Новейшие</p>
+            </div>
+
+        </div>
+
+    </div>
+    <hr class="hr">
+
+
+    <div class="container">
+        <div class="sect2-cards">
+           <div class="row">
+                {% for i in product %}
+            <div class="col-lg-3 col-md-4 col-sm-12">
+                <div class="sect2-card">
+                    <a href="{% url 'btn11' %}"><img src="{{ i.photo.url }}" alt=""></a>
+
+
+                    <p>{{ i.title}}</p>
+                    <h1>от {{i.price}} сум</h1>
+
+                </div>
+            </div>
+            {% endfor %}
+           </div>
+
+
+        </div>
+
+    </div>
+
+    {% endblock %}
+
+
+</div>
+
+</body>
+
+</html>

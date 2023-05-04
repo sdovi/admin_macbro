@@ -1,0 +1,94 @@
+{% extends 'main/jinja.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'main/css/macbrostyletwo.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/macstyle.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+{% block navbar %}
+
+<div class="section">
+    <div class="container">
+        <div class="sect1">
+            <div class="sect-text">
+                <h1>Marshal</h1>
+                <p>Интернет-магазин MacBro представляет акустику Marshall в Ташкенте и других городах Узбекистана.
+                    Продажа акустических систем, колонок и наушников от известного британского бренда —
+                    востребованное
+                    направление нашей деятельности. Мы реализуем лучшие товары от Маршал, предлагая покупателям
+                    оптимальные условия продажи. Безупречное качество продукции сочетается с минимальными для
+                    Ташкента
+                    ценами на акустику Marshall, быструю доставку товара и другими преимуществами нашего сервиса.
+                </p>
+            </div>
+        </div>
+    </div>
+    <hr class="hr">
+</div>
+
+<div class="section2">
+    <div class="container">
+        <div class="sect2-text">
+            <p class="posm">Посмотреть все продукты</p>
+
+            <div class="sect2-text2">
+                <p class="sortir">Сортировать по:</p>
+                <p class="novinka">Новейшие</p>
+            </div>
+
+        </div>
+
+    </div>
+    <hr class="hr">
+
+
+    <div class="container">
+        <div class="sect2-cards">
+            <div class="sect2-card">
+                <img src="https://cdn.macbro.uz/macbro/41dd4d7d-a7cc-47c1-a5bb-f02edc30d6f4" alt="">
+
+                <p>Marshall Strockwell 2</p>
+                <h1>От 4 383 000 сум</h1>
+
+            </div>
+            <div class="sect2-card">
+                <img src="https://cdn.macbro.uz/macbro/746f17c5-107f-4fe1-a65d-69dccdf2013f" alt="">
+
+                <p>Marshall Strockwell 2</p>
+                <h1>От 5 093 500 сум</h1>
+
+            </div>
+            <div class="sect2-card">
+                <img src="https://cdn.macbro.uz/macbro/853d5a9a-f6c4-4a9b-aa26-35296633eb93" alt="">
+
+                <p>Marshall Strockwell 2</p>
+                <h1>От 4 856 500 сум</h1>
+
+            </div>
+            <div class="sect2-card">
+                <img src="https://cdn.macbro.uz/macbro/f2f76eba-7fdf-4f6c-9403-cb60e8eadfc9" alt="">
+
+                <p>Marshall Strockwell 2</p>
+                <h1>От 6 633 500 сум</h1>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+{% endblock %}
+</body>
+
+</html>

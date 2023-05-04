@@ -1,0 +1,30 @@
+.sectcompaniya {
+    height: 330px;
+}
+.sectcompani{
+    text-align: start;
+    padding-top: 50px;
+    font-size: 44px;
+    color: #fff;
+    width: 370px;
+}
+.container2{
+    max-width: 1400px;
+    margin: auto;
+    width: 70%;
+}
+.sectcompani-text h5{
+    font-weight: 600;
+
+}
+.sectcompani-text p{
+    text-align: center;
+    font-size: 30px;
+}
+.sectcompani-text{
+    padding-top: 50px;
+}
+.sectcompani-text{
+    margin: auto;
+    width: 80%;
+}

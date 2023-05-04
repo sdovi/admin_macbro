@@ -1,0 +1,33 @@
+.sectmagazine-text{
+    font-size: 28px;
+    line-height: 1.5;
+    font-weight: 700;
+    padding-top: 50px;
+    margin-bottom: 30px;
+}
+.magazine-text1{
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.magazin1{
+    text-align: start;
+    width: 210px;
+}
+.magazin2{
+    text-align: center;
+    width: 270px;
+}
+.magazin3{
+    text-align: end;
+    width: 320px;
+}
+.contentmagazine{
+    display: flex;
+    justify-content: space-between;
+}
+.filial{
+    padding-top: 40px;
+}
